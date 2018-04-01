@@ -25,8 +25,8 @@
                               <ul>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">About</a></li>
-						
-									
+
+
                               </ul>
                         </div>
                   </nav>
@@ -35,10 +35,13 @@
 
             <div class="content">
                   <p>
-				  <center><form>
-					<input type="text" title="fact" placeholder="fact" />
-					<button type="submit" class="btn">Enter</button>
-				  </form></center>
+				  <center>
+            <div class="form-group">
+              <label for="usr">Enter Fact:</label>
+              <input type="text" class="form-control" id="usr">
+              <button type="button">Enter</button>
+            </div>
+        </center>
 
                   </p>
             </div>
@@ -54,6 +57,7 @@
       });
 
       // Scrolling Effect
+            $('nav').addClass('grey');
       $(window).on("scroll", function() {
             if($(window).scrollTop()) {
                   $('nav').addClass('black');
@@ -61,6 +65,7 @@
 
             else {
                   $('nav').removeClass('black');
+                  $('nav').addClass('grey');
             }
       })
 

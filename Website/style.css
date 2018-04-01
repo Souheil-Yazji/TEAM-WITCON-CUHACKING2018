@@ -54,9 +54,14 @@ nav ul {
       transition: 1s;
 }
 
+nav.grey ul {
+      background: #89B;
+}
+
 nav.black ul {
       background: #000;
 }
+
 
 nav ul li {
       display: inline-block;
