@@ -4,10 +4,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Responsive Sticky Navbar</title>
+      <title>Foodfacts</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="script.js"></script>
 </head>
 <body>
       <div class="wrapper">
@@ -24,9 +25,9 @@
                         <div class="menu">
                               <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-						
-									
+                                    <li><a href="about.html">About</a></li>
+
+
                               </ul>
                         </div>
                   </nav>
@@ -34,13 +35,13 @@
             </header>
 
             <div class="content">
-                  <p>
-				  <center><form>
-					<input type="text" title="fact" placeholder="fact" />
-					<button type="submit" class="btn">Enter</button>
-				  </form></center>
-
-                  </p>
+				  <center>
+					<!--<input type="text" title="fact" placeholder="fact" />-->
+					<!--<button type="submit" class=".btn">Enter</button>-->
+          <!--<input type="button" class=".btn" value="Enter"/>-->
+          <button type="button" class="btn">Click to get a food fact</button>
+          <p id="line">hehe</p>
+        </center>
             </div>
       </div>
 
@@ -54,6 +55,7 @@
       });
 
       // Scrolling Effect
+      $('nav').addClass('blue');
       $(window).on("scroll", function() {
             if($(window).scrollTop()) {
                   $('nav').addClass('black');
@@ -61,6 +63,7 @@
 
             else {
                   $('nav').removeClass('black');
+                  $('nav').addClass('blue');
             }
       })
 

@@ -21,5 +21,6 @@ app.get("/home", function(req, res) {
 });
 
 app.get("/fact", function(req, res) {
+  //
   res.send("Fact");
 });
